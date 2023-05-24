@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EcoSim" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uTV-Gw-6VD" userLabel="ControlPanel">
+                                <rect key="frame" x="40" y="73" width="334" height="66"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5zm-oz-2Ft" userLabel="Control panel">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="33"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIV-Ci-dH7">
+                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="+1 turn"/>
+                                                <connections>
+                                                    <action selector="handleTapOnOneTurn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTd-bT-Vq1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfj-c7-bBt">
+                                                <rect key="frame" x="111.5" y="0.0" width="111" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="+5 turns"/>
+                                                <connections>
+                                                    <action selector="handleTapOnFiveTurns:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jcv-xa-PVa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nA2-dC-ua2">
+                                                <rect key="frame" x="222.5" y="0.0" width="111.5" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="Auto-Turn"/>
+                                                <connections>
+                                                    <action selector="handleTapOnTenTurns:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xXV-9Z-5bQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kiP-FU-5qE" userLabel="Control panel">
+                                        <rect key="frame" x="0.0" y="33" width="334" height="33"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxu-BC-pFr">
+                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <state key="normal" title="New Game"/>
+                                                <connections>
+                                                    <action selector="handleNewGameTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbm-OG-HtH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlA-vj-0Tm">
+                                                <rect key="frame" x="111.5" y="0.0" width="111" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <state key="normal" title="Add sheep"/>
+                                                <connections>
+                                                    <action selector="handleAddSheepTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sVP-dx-Eut"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpg-mR-Ev9">
+                                                <rect key="frame" x="222.5" y="0.0" width="111.5" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <state key="normal" title="Add wolf"/>
+                                                <connections>
+                                                    <action selector="handleAddWolfTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w1r-PR-jT5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turn 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfD-3H-e6y">
+                                <rect key="frame" x="182.5" y="142" width="49" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="m43-oT-gwL" userLabel="StatisticsPanel">
+                                <rect key="frame" x="40" y="165.5" width="334" height="41"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QAB-zJ-oGW" userLabel="SheepPanel">
+                                        <rect key="frame" x="0.0" y="0.0" width="162" height="41"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfs-fK-aHm">
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sheeps alive:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="bu9-At-WT9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjg-cM-xlM">
+                                                        <rect key="frame" x="96" y="0.0" width="66" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTl-jU-7nn">
+                                                <rect key="frame" x="0.0" y="20.5" width="162" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sheeps dead:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="qEQ-KM-rLu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="99.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUT-ZG-x61">
+                                                        <rect key="frame" x="99.5" y="0.0" width="62.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="t5C-Db-pHv" userLabel="WolfPanel">
+                                        <rect key="frame" x="172" y="0.0" width="162" height="41"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rae-Lu-dQn">
+                                                <rect key="frame" x="0.0" y="0.0" width="162" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wolves alive:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aL-GH-6lC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQm-WW-rM4">
+                                                        <rect key="frame" x="94" y="0.0" width="68" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmP-xH-0aK">
+                                                <rect key="frame" x="0.0" y="20.5" width="162" height="20.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wolves dead:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQc-0p-kmp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="97.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dy1-C6-I5G">
+                                                        <rect key="frame" x="97.5" y="0.0" width="64.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RCB-pu-KFP" customClass="MapView" customModule="EcoSim" customModuleProvider="target">
+                                <rect key="frame" x="5" y="216.5" width="404" height="404"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RCB-pu-KFP" secondAttribute="height" multiplier="1:1" id="9xh-u5-at9"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYs-Eu-ZFc">
+                                <rect key="frame" x="40" y="630.5" width="334" height="231.5"/>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m43-oT-gwL" firstAttribute="top" secondItem="SfD-3H-e6y" secondAttribute="bottom" constant="3" id="0cG-jh-B4g"/>
+                            <constraint firstItem="uTV-Gw-6VD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="2zQ-lG-qtd"/>
+                            <constraint firstItem="SfD-3H-e6y" firstAttribute="top" secondItem="uTV-Gw-6VD" secondAttribute="bottom" constant="3" id="3ll-0b-j3c"/>
+                            <constraint firstItem="RCB-pu-KFP" firstAttribute="top" secondItem="m43-oT-gwL" secondAttribute="bottom" constant="10" id="8Yv-Gc-qba"/>
+                            <constraint firstItem="m43-oT-gwL" firstAttribute="trailing" secondItem="uTV-Gw-6VD" secondAttribute="trailing" id="GIW-h8-pPq"/>
+                            <constraint firstItem="m43-oT-gwL" firstAttribute="leading" secondItem="uTV-Gw-6VD" secondAttribute="leading" id="In4-Jz-xvl"/>
+                            <constraint firstItem="SfD-3H-e6y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X5f-iY-b31"/>
+                            <constraint firstItem="m43-oT-gwL" firstAttribute="trailing" secondItem="ZYs-Eu-ZFc" secondAttribute="trailing" id="X7o-zU-Eku"/>
+                            <constraint firstItem="uTV-Gw-6VD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ZWR-gK-CkQ"/>
+                            <constraint firstItem="m43-oT-gwL" firstAttribute="leading" secondItem="ZYs-Eu-ZFc" secondAttribute="leading" id="ayl-WQ-MRI"/>
+                            <constraint firstItem="RCB-pu-KFP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="c2m-8g-uoK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RCB-pu-KFP" secondAttribute="trailing" constant="5" id="iC8-xZ-DFv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZYs-Eu-ZFc" secondAttribute="bottom" id="mPR-fr-44e"/>
+                            <constraint firstItem="ZYs-Eu-ZFc" firstAttribute="top" secondItem="RCB-pu-KFP" secondAttribute="bottom" constant="10" id="z5r-Ex-Yu8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uTV-Gw-6VD" secondAttribute="trailing" constant="40" id="zRN-XJ-hex"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="logView" destination="ZYs-Eu-ZFc" id="eOP-Gf-THj"/>
+                        <outlet property="mapView" destination="RCB-pu-KFP" id="Wc1-WD-zZg"/>
+                        <outlet property="modeButton" destination="nA2-dC-ua2" id="Xdz-vc-VGp"/>
+                        <outlet property="sheepsAliveLabel" destination="zjg-cM-xlM" id="fKm-1K-c71"/>
+                        <outlet property="sheepsDeadLabel" destination="IUT-ZG-x61" id="Jig-FA-lPM"/>
+                        <outlet property="turnsLabel" destination="SfD-3H-e6y" id="H27-gU-oMK"/>
+                        <outlet property="wolvesAliveLabel" destination="XQm-WW-rM4" id="vwn-7Y-x87"/>
+                        <outlet property="wolvesDeadLabel" destination="Dy1-C6-I5G" id="37I-ex-ytY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

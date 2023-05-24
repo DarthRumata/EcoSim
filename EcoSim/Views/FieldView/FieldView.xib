@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FieldView" customModule="EcoSim" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="89" height="94"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="6Hv-H9-zPE">
+                    <rect key="frame" x="0.0" y="0.0" width="89" height="94"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vr-R9-7uW">
+                            <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="94"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" image="sheep" translatesAutoresizingMaskIntoConstraints="NO" id="jLK-AB-AKG">
+                                    <rect key="frame" x="0.0" y="0.0" width="44.666666666666664" height="94"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="8sA-Ye-BIH">
+                                    <rect key="frame" x="19.333333333333332" y="39.333333333333336" width="6" height="15.666666666666664"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="jLK-AB-AKG" secondAttribute="bottom" id="5sZ-aq-EoV"/>
+                                <constraint firstItem="8sA-Ye-BIH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3vr-R9-7uW" secondAttribute="top" id="I00-UI-uwr"/>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8sA-Ye-BIH" secondAttribute="bottom" id="TP0-YK-OY4"/>
+                                <constraint firstAttribute="trailing" secondItem="jLK-AB-AKG" secondAttribute="trailing" id="bGz-di-7Fb"/>
+                                <constraint firstItem="8sA-Ye-BIH" firstAttribute="centerY" secondItem="jLK-AB-AKG" secondAttribute="centerY" id="g3B-l7-daF"/>
+                                <constraint firstItem="jLK-AB-AKG" firstAttribute="leading" secondItem="3vr-R9-7uW" secondAttribute="leading" id="r9k-TY-7de"/>
+                                <constraint firstItem="8sA-Ye-BIH" firstAttribute="centerX" secondItem="jLK-AB-AKG" secondAttribute="centerX" id="sJr-gh-Pau"/>
+                                <constraint firstItem="jLK-AB-AKG" firstAttribute="top" secondItem="3vr-R9-7uW" secondAttribute="top" id="xty-2D-eEc"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzS-Iq-6Kn">
+                            <rect key="frame" x="44.666666666666657" y="0.0" width="44.333333333333343" height="94"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" image="wolf" translatesAutoresizingMaskIntoConstraints="NO" id="lcB-uj-ILV">
+                                    <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="94"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="DpP-on-Asf">
+                                    <rect key="frame" x="18" y="39.333333333333336" width="8.3333333333333357" height="15.666666666666664"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="DpP-on-Asf" secondAttribute="bottom" id="9eC-sw-UZB"/>
+                                <constraint firstAttribute="bottom" secondItem="lcB-uj-ILV" secondAttribute="bottom" id="Jog-PW-9Go"/>
+                                <constraint firstItem="lcB-uj-ILV" firstAttribute="leading" secondItem="lzS-Iq-6Kn" secondAttribute="leading" id="O6v-UK-dm9"/>
+                                <constraint firstItem="DpP-on-Asf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lzS-Iq-6Kn" secondAttribute="top" id="lE7-JG-Zq1"/>
+                                <constraint firstItem="DpP-on-Asf" firstAttribute="centerY" secondItem="lcB-uj-ILV" secondAttribute="centerY" id="p6d-VT-N2p"/>
+                                <constraint firstItem="lcB-uj-ILV" firstAttribute="top" secondItem="lzS-Iq-6Kn" secondAttribute="top" id="twW-lt-Vai"/>
+                                <constraint firstAttribute="trailing" secondItem="lcB-uj-ILV" secondAttribute="trailing" id="wuE-zN-XoO"/>
+                                <constraint firstItem="DpP-on-Asf" firstAttribute="centerX" secondItem="lcB-uj-ILV" secondAttribute="centerX" id="yyV-La-X4u"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="6Hv-H9-zPE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="KwK-pj-p0S"/>
+                <constraint firstItem="6Hv-H9-zPE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RkW-HH-arP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6Hv-H9-zPE" secondAttribute="trailing" id="VeL-hp-gn7"/>
+                <constraint firstAttribute="bottom" secondItem="6Hv-H9-zPE" secondAttribute="bottom" id="bYb-P9-MiC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sheepCountView" destination="8sA-Ye-BIH" id="nlR-kW-7e8"/>
+                <outlet property="wolfCountView" destination="DpP-on-Asf" id="Q8d-Bd-D1R"/>
+            </connections>
+            <point key="canvasLocation" x="-63.358778625954194" y="245.07042253521129"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sheep" width="150" height="150"/>
+        <image name="wolf" width="113" height="113"/>
+    </resources>
+</document>
